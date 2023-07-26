@@ -23,14 +23,14 @@ This is a compiled list of all the technologies utilized by CSG. This list will 
 - [Doppler](./doppler/tool.md)
 - [VSCode](./vscode/tool.md)
 - [Postman](./postman/tool.md) (not necessary most of the time)
-- [AWS] (need to add)
+- [AWS](./aws/tool.md)
 - [Jenkins] (not sure yet)
 
 ### Typescript
 
 - [npm](./npm/tool.md)
 - [yarn](./yarn/tool.md)
-- [prisma] (need to add)
+- [Prisma](./prisma/tool.md)
 
 ### Rust
 

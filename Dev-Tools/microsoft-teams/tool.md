@@ -18,7 +18,7 @@ This is a communication app that is used by Campus Experience as a whole. Any wo
 
 1. Download the Apple app or the Android App from [here](https://aka.ms/teamsmobiledownload) or scan the QR Code.
 
-![Teams QR Code](./images/mobile-qr.png)
+![Teams QR Code](./images/mobile-QR.png)
 
 2. log in to your Cedarville account
 
