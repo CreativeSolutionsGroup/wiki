@@ -1,8 +1,8 @@
-<img src="./images/logo.webp" width=100px alt="Microsoft Teams Logo"/>
+<img src="./images/logo.webp" width=100px alt="Duo Logo"/>
 
-# Microsoft Teams
+# Duo
 
-[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Teams](teams.md)
+[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Duo](tool.md)
 
 This is the two-factor authentication application used on the Cedarville accounts. Unfortunately, you are not able to choose any different two-factor apps. As a student worker, you are required to use Duo.
 

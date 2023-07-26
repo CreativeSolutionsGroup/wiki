@@ -2,7 +2,7 @@
 
 # GitHub
 
-[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Teams](teams.md)
+[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [GitHub](tool.md)
 
 This is our version control system at CSG. We have many repositories that are open to the public to see and therefore must be protected and well looked after. This is used for saving all of our work in a 
 

@@ -1,8 +1,8 @@
-<img src="./images/logo.png" width=100px alt="Microsoft Teams Logo"/>
+<img src="./images/logo.png" width=100px alt="Dayforce Logo"/>
 
-# Microsoft Teams
+# Dayforce
 
-[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Teams](teams.md)
+[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Dayforce](tool.md)
 
 This is the payroll system that is used by Cedarville University. It is how you will clock in and out of your shifts and how HR will know who needs to be paid and how much. Remember that unless you are told otherwise, you are allotted 10 hours a week for working.
 
