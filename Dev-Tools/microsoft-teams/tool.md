@@ -17,8 +17,8 @@ This is a communication app that is used by Campus Experience as a whole. Any wo
 ### Mobile
 
 1. Download the Apple app or the Android App from [here](https://aka.ms/teamsmobiledownload) or scan the QR Code.
- 
-![Teams QR Code](./images/mobile-qr.avif)
+
+![Teams QR Code](./images/mobile-qr.png)
 
 2. log in to your Cedarville account
 
@@ -35,12 +35,13 @@ Most of the messaging that you will care about will be in the **Chat** tab. In t
 ## FAQ
 
 *Why Can't I see the CSG team on desktop?*
+
 > 1. Click the profile button up at the top right of the window.
-> 
+>
 > <img src="./images/Teams-profile-change-1.png" alt="Teams desktop profile help 1" width="800px"/>
-> 
+>
 > 2. Select the profile that is linked to your Cedarville email.
-> 
+>
 > <img src="./images/Teams-profile-change-2.png" alt="Teams desktop profile help 2" width="800px"/>
 >
 > 3. It should open a new window with your selected account.
@@ -48,10 +49,11 @@ Most of the messaging that you will care about will be in the **Chat** tab. In t
 > 5. If you still do not see the teams listed on the left, please contact one of your execs.
 
 *Why can't I see the CSG team on mobile?*
+
 > 1. Click the profile button at the top left of the app.
->    
+>
 > <img src="./images/teams-mobile-profile-help1.png" alt="Teams mobile profile help 1" height="500px"/>
-> 
+>
 > 2. Select the profile that is linked to your Cedarville email.
 > 3. If you do not see your Cedarville account click the add account button and sign in.
 >

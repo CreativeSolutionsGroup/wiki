@@ -1,3 +1,81 @@
-# CSG Wiki
+# CSG Wiki Home
 
 [Home](Readme.md)
+
+This comprises all of the need-to-know knowledge within CSG and should be updated with new information and methods whenever possible. On each page, there will be breadcrumbs to the previous page, and should be the biggest idea possible for the section. A good rule to go by is, if you think it should be split up, split it up. This page shall comprise a table of contents With the main section towards the top and an easy way to get to everything else using `ctrl+f`. If you have any questions please contact an exec. Or if you believe something should be here, please add it and make a PR request. The goal is to make the information as accessible as possible for anyone on the team.
+
+---
+
+## Main Sections
+
+- [DevTools](./Dev-Tools/dev-tools.md)
+
+---
+
+## Full Table of Contents
+
+- [DevTools](./Dev-Tools/dev-tools.md)
+  - [Microsoft Teams](./Dev-Tools/microsoft-teams/tool.md)
+    - [Installation](./Dev-Tools/microsoft-teams/tool.md#installation)
+    - [How to use](./Dev-Tools/microsoft-teams/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/microsoft-teams/tool.md#faq)
+  - [Basecamp](./Dev-Tools/basecamp/tool.md)
+    - [Installation](./Dev-Tools/basecamp/tool.md#installation)
+    - [How to use](./Dev-Tools/basecamp/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/basecamp/tool.md#faq)
+  - [Dayforce](./Dev-Tools/dayforce/tool.md)
+    - [Installation](./Dev-Tools/dayforce/tool.md#installation)
+    - [How to use](./Dev-Tools/dayforce/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/dayforce/tool.md#faq)
+  - [Dayforce Wallet](./Dev-Tools/dayforce-wallet/tool.md)
+    - [Installation](./Dev-Tools/dayforce-wallet/tool.md#installation)
+    - [How to use](./Dev-Tools/dayforce-wallet/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/dayforce-wallet/tool.md#faq)
+  - [Duo](./Dev-Tools/duo/tool.md)
+    - [Installation](./Dev-Tools/duo/tool.md#installation)
+    - [How to use](./Dev-Tools/duo/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/duo/tool.md#faq)
+  - [GitHub](./Dev-Tools/github/tool.md)
+    - [Installation](./Dev-Tools/github/tool.md#installation)
+    - [How to use](./Dev-Tools/github/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/github/tool.md#faq)
+  - [GitHub Desktop](./Dev-Tools/github-desktop/tool.md)
+    - [Installation](./Dev-Tools/github-desktop/tool.md#installation)
+    - [How to use](./Dev-Tools/github-desktop/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/github-desktop/tool.md#faq)
+  - [Doppler](./Dev-Tools/doppler/tool.md)
+    - [Installation](./Dev-Tools/doppler/tool.md#installation)
+    - [How to use](./Dev-Tools/doppler/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/doppler/tool.md#faq)
+  - [VSCode](./Dev-Tools/vscode/tool.md)
+    - [Installation](./Dev-Tools/vscode/tool.md#installation)
+    - [How to use](./Dev-Tools/vscode/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/vscode/tool.md#faq)
+  - [Postman](./Dev-Tools/postman/tool.md)
+    - [Installation](./Dev-Tools/postman/tool.md#installation)
+    - [How to use](./Dev-Tools/postman/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/postman/tool.md#faq)
+  - [npm](./Dev-Tools/npm/tool.md)
+    - [Installation](./Dev-Tools/npm/tool.md#installation)
+    - [How to use](./Dev-Tools/npm/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/npm/tool.md#faq)
+  - [yarn](./Dev-Tools/yarn/tool.md)
+    - [Installation](./Dev-Tools/yarn/tool.md#installation)
+    - [How to use](./Dev-Tools/yarn/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/yarn/tool.md#faq)
+  - [rust + cargo](./Dev-Tools/rust-cargo/tool.md)
+    - [Installation](./Dev-Tools/rust-cargo/tool.md#installation)
+    - [How to use](./Dev-Tools/rust-cargo/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/rust-cargo/tool.md#faq)
+  - [CodeLLDB](./Dev-Tools/codelldb/tool.md)
+    - [Installation](./Dev-Tools/codelldb/tool.md#installation)
+    - [How to use](./Dev-Tools/codelldb/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/codelldb/tool.md#faq)
+  - [rust-analyzer](./Dev-Tools/rust-analyzer/tool.md)
+    - [Installation](./Dev-Tools/rust-analyzer/tool.md#installation)
+    - [How to use](./Dev-Tools/rust-analyzer/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/rust-analyzer/tool.md#faq)
+  - [WSL](./Dev-Tools/wsl/tool.md)
+    - [Installation](./Dev-Tools/wsl/tool.md#installation)
+    - [How to use](./Dev-Tools/wsl/tool.md#how-to-use)
+    - [FAQ](./Dev-Tools/wsl/tool.md#faq)
