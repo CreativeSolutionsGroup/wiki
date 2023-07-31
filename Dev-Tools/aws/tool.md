@@ -18,8 +18,6 @@ Our account ID: 177987852765
 
 ## How to use
 
-This will be the most important section. Describe (with pictures) how to set up projects, navigate the web app, and troubleshoot. Anything that can be useful should exist here.
-
 Navigate to: https://us-east-2.signin.aws.amazon.com/ and place the account ID given under Installation in the box.
 
 Next, if you have credentials, put your username and password into them.
