@@ -92,7 +92,7 @@ This comprises all the commands of actual work on the repo. These will be in ord
 6. You will want to change the branch name.
     - We use a few different prefaces for different reasons.
         - `feature` is our main preface that denotes the changes as mostly new items that add to the application.
-        - `bugfix` is for when you are working purely on fixing bugs.
+        - `fix` is for when you are working purely on fixing bugs.
         - `update` is uncommon, but for when you are just updating dependencies.
     - After the preface add a `/`.
     - Then describe what the task is in as few characters as possible.
@@ -131,7 +131,7 @@ Now that you have a new local branch and are moved to it, you will need to push 
 When you have reached a milestone on the task or have finished up your work it is recommended you save all your changes to the repo. That is where committing comes into play.
 
 1. First, run `git status` to make sure that all of the changed files show up on the list.
-2. Run `git add *` which will stage all of the changes to be committed.
+2. Run `git add .` which will stage all of the changes to be committed.
 3. Run `git commit -m "<COMMIT MESSAGE>"` to commit your changes. The commit message should comprise the changes you made in an easy-to-understand message. It will allow for easy backtracking later.
 4. Run `git push` to push all commits to GitHub. If you get a warning that says that you do not have all remote changes run `git pull` and then `git push`.
 
