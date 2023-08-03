@@ -2,14 +2,12 @@
 
 # rust-analyzer
 
-[Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [rust-analyzer](tool.md)
+rust-analyzer is a VSCode extension that allows for type completion and error checking within Rust files.
 
 ## Installation
 
-### Desktop
-
-### Mobile
+Search for `rust-analyzer` in the VSCode Extensions tab and install it.
 
 ## How to use
 
-## FAQ
+It will now automatically run within Rust files, and give alerts when it finds errors or warnings.
