@@ -66,7 +66,7 @@ You will be able to access all of the repos by going to our [organization page](
 
 ### Cloning a repo
 
-Cloning a repo is a necessary first step to work on any repo. It is the act of creating a local copy of the repo on your personal device, that mirrors the repo found on GitHub. You can do this in a few ways. One way is utilizing the [desktop app](../github-desktop/tool.md) and the instructions for that can be found on that page. Another way is by utilizing a terminal/shell, here are the steps for that method.
+Cloning a repo is a necessary first step to work on any repo. It is the act of creating a local copy of the repo on your personal device, that mirrors the repo found on GitHub. You can do this in a few ways. One way is utilizing the [desktop app](../github-desktop/tool.md#cloning-a-repo) and the instructions for that can be found on that page. Another way is by utilizing a terminal/shell, here are the steps for that method.
 
 1. Open a terminal/shell and navigate to the folder you would like to contain the repo.
 2. Click on the `Code` button as seen below.
@@ -156,5 +156,9 @@ At this point you are free to keep working, however, if this is the end of your 
 4. Once all wrongs are selected, click the `Review Changes` button at the top and leave an overall comment. Select `Request Changes` and then `Submit Review`.
 5. If everything was good then click the `Review Changes` button at the top and leave an overall comment. Commonly we will say `lgtm` meaning `looks good to me`. Select `Approve` and then `Submit Review`.
 6. If approved, head back to the conversation tab and select `Merge pull request`.
+
+## Helpful Tools
+
+- 
 
 ## FAQ
