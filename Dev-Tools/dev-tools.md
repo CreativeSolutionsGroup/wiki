@@ -12,6 +12,7 @@ This is a compiled list of all the technologies utilized by CSG. This list will 
 
 - [Teams](./microsoft-teams/tool.md)
 - [Basecamp](./basecamp/tool.md)
+- [BZ Commendations](./bz-comm/tool.md)
 - [Dayforce](./dayforce/tool.md)
 - [Dayforce Wallet](./dayforce-wallet/tool.md) (If you are new to CE)
 - [Duo](./duo/tool.md)

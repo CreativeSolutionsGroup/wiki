@@ -1,4 +1,4 @@
-<img src="./images/logo.png" width=100px alt="Bascamp 3 Logo"/>
+<img src="./images/logo.png" width=100px alt="Basecamp 3 Logo"/>
 
 # Basecamp
 
