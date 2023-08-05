@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a compiled list of all the technologies utilized by CSG. This list will be split between project types (the language they are developed in). Clicking on any of the tools will bring you to a description of how to install and use that tool. If there is anything that you believe should be added to this list please contact Sebastian Neiswanger on Teams or email at [sneiswanger@cedarville.edu](mailto:sneiswanger@cedarville.edu).
+This is a compilation of all the technologies utilized by CSG. This list is split between project types (the language they are developed in). Clicking on any of the tools will bring you to a description of how to install and use that tool. If there is anything you believe should be added to this list please contact Sebastian Neiswanger on Teams or email at [sneiswanger@cedarville.edu](mailto:sneiswanger@cedarville.edu).
 
 ---
 
@@ -23,7 +23,7 @@ This is a compiled list of all the technologies utilized by CSG. This list will 
 - [GitHub Desktop](./github-desktop/tool.md) (If you are new to Git)
 - [Doppler](./doppler/tool.md)
 - [VSCode](./vscode/tool.md)
-- [Postman](./postman/tool.md) (not necessary most of the time)
+- [Postman](./postman/tool.md) (Not needed for all)
 - [AWS](./aws/tool.md)
 - [Jenkins] (not sure yet)
 

@@ -4,7 +4,7 @@
 
 [Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Dayforce](tool.md)
 
-This is the payroll system that is used by Cedarville University. It is how you will clock in and out of your shifts and how HR will know who needs to be paid and how much. Remember that unless you are told otherwise, you are allotted 10 hours a week for working.
+This is the payroll system used by Cedarville University. It is how you clock in and out of your shifts and how HR will know who needs to be paid and how much. Remember that unless you are told otherwise, you are allotted 10 hours a week to work (this is a limit, not a requirement).
 
 ## Installation
 
@@ -17,7 +17,7 @@ This is the payroll system that is used by Cedarville University. It is how you 
 ## FAQ
 
 *How many hours should I work?*
-> You are not required to put in any hours as a normal team member per week. You are however only alloted 10 hours per week, and 20 hours in a pay period. This may change if given direct orders from a CSG exec, Westin, or Brian.
+> You are not required to put in any hours as a non-executive team member per week. You are, however, only alloted 10 hours per week, and 20 hours in a pay period (every 2 weeks). This may change if given direct orders from a CSG executive, Westin, or Brian.
 
 *I can't log in. What should I do?*
 

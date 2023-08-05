@@ -4,20 +4,20 @@
 
 [Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [GitHub](tool.md)
 
-This is our version control system at CSG. We have many repos(repositories) that are open to the public to see and therefore must be protected and well looked after. This is used for saving all of our work in an accessible manner to our entire team. This is also a great way to show future employers the work you have done and worked on. One thing to always remember while using git is, `never ever work on main`.
+This is our version control system at CSG. We have many repos (repositories) that are publically accessible and therefore must be protected and well maintained. This is used to save all our work in a manner visible to our entire team. This is also a great way to show future employers the work you have done. One thing to always remember while using git is, do *not* work off of `main`.
 
 ## Installation
 
-As GitHub uses Git you will need to install that first. Go to the [git downloads page](https://git-scm.com/downloads) and download and install the version that best suits your needs. From here you don't have to worry about installing anything else. You may use the mobile device to keep track of the repos, but will not be able to work on them from there. There are however a few more necessary setup steps.
+As GitHub uses Git you will need to install that first. Go to the [git downloads page](https://git-scm.com/downloads) and download and install the version that best suits your needs. Nothing else from here will need to be installed. You may use the mobile device to keep track of the repositories, but you will not be able to work on them from there.
 
 ### GitHub account creation
 
-**Heads up**: You will want to use a personal email and **NOT** your Cedarville email. This account is to be yours and therefore should be able to persist on your own accord. It acts as your portfolio for your work. It is recommended that if you don't have a professional personal email make one, but it needs to be your own.
+**NOTE**: You will want to use a personal email and **NOT** your Cedarville email. This account is to be yours and therefore should be able to persist after graduation. It acts as a portfolio for your work. It is recommended that if you don't have a professional personal email, make one.
 
 1. Head to the [GitHub registration page](https://github.com/signup).
-2. From here follow the steps on there.
+2. Follow the steps there.
 3. You can access our organization from [here](https://github.com/CreativeSolutionsGroup).
-4. You will need to be added to the organization to make changes there.
+4. You will need to be added to the organization to make changes.
 5. It is not required but recommended that you set up 2FA on your GitHub. To do so, start by going to your profile [security page](https://github.com/settings/security). There are many options at the bottom of this page. Choose one or many.
 
 ### Name and email setup
@@ -29,25 +29,25 @@ git config --global user.name "Your name here"
 git config --global user.email "your_email@example.com"
 ```
 
-As long as you replace what is in parenthesis then you will have "logged in" to git.
+As long as you replace what is in quotations, you will have "logged in" to git.
 Keep in mind that your email should be the one used to create your GitHub account.
 
 ### SSH setup (optional)
 
-SSH contains better protection and authentication when working on repos. It is not required for CSG, but is recommended that you at least look into it.
+SSH contains better protection and authentication when working on repositories. It is not required for CSG, but is recommended that you consider it.
 
 1. Open a terminal/shell and enter `cd .\.ssh\`
-2. Enter `ls` and look for two different files. `id_rsa` and `id_rsa.pub`
+2. Enter `ls` and look for two different files: `id_rsa` and `id_rsa.pub`.
 3. If you have both skip to step 6.
-4. Create public/private keys by entering this command `ssh-keygen -t rsa -C "your_email@example.com"`. Make sure to use the same email from the setup above.
-5. If it asks for a file to save the key, enter `id_rsa`. If it asks for a passphrase either enter something you will remember or just leave it empty.
+4. Create public/private keys by entering this command: `ssh-keygen -t rsa -C "your_email@example.com"`. Make sure to use the same email from the setup above.
+5. If it asks for a file to save the key, enter `id_rsa`. If it asks for a passphrase enter either something you will remember or leave it empty.
 6. Copy the contents of the `id_rsa.pub` file. With PowerShell use `cat .\id_rsa.pub | clip` or on mac use `pbcopy < ~/.ssh/id_rsa.pub`.
 7. You will now navigate to the [GitHub profile settings](https://github.com/settings/profile).
 8. Click on `SSH and GPG keys` on the left side.
 9. Select `New SSH key`.
 10. Give the key a name linking you back to the device you are on, and then paste the contents into the `Key` box.
 11. After saving, go back into the terminal and enter `ssh -T git@github.com` to test that it worked.
-12. You will likely get something along the line of:
+12. You will likely get something along the lines of...
 
 ```ps
 The authenticity of host 'github.com (140.82.112.3)' can't be established.
@@ -62,11 +62,11 @@ you should enter `yes`.
 
 ## How to use
 
-You will be able to access all of the repos by going to our [organization page](https://github.com/CreativeSolutionsGroup). Once inside a repo, there are a few things you will need to know how to do.
+You will be able to access all of the repos by going to our [organization page](https://github.com/CreativeSolutionsGroup). Once inside a repository, there are a few things you will need to know how to do.
 
 ### Cloning a repo
 
-Cloning a repo is a necessary first step to work on any repo. It is the act of creating a local copy of the repo on your personal device, that mirrors the repo found on GitHub. You can do this in a few ways. One way is utilizing the [desktop app](../github-desktop/tool.md#cloning-a-repo) and the instructions for that can be found on that page. Another way is by utilizing a terminal/shell, here are the steps for that method.
+Cloning a repository is a necessary first step to work on any repository. It creates a local copy of the repository on your personal device which mirrors the repository found on GitHub. You can do this in a few ways: utilizing the [desktop app](../github-desktop/tool.md#cloning-a-repo) (the instructions can be found on the linked page), or utilizing a terminal/shell. The steps for the latter are as follows:
 
 1. Open a terminal/shell and navigate to the folder you would like to contain the repo.
 2. Click on the `Code` button as seen below.
@@ -74,18 +74,18 @@ Cloning a repo is a necessary first step to work on any repo. It is the act of c
 <img src="./images/desktop clone page.png" width=600px alt="Github clone example"/>
 
 3. You will be able to choose from three options. We will look at `HTTPS` and `SSH` here.
-4. If you set up `SSH` in the installation phase then navigate there and copy the link. If not copy the `HTTPS` link.
-5. Go back into your terminal and enter `git clone` and paste your copied link at the end. If you would like to name the repo folder to be named something other than what the actual repo is called then add it to the end. Here is an example using `HTTPS` of our wiki repo, renamed to knowledge. `git clone https://github.com/CreativeSolutionsGroup/wiki.git knowledge`
-6. At this point, you now have a clone of the repo on your system.
+4. If you set up `SSH` in the installation phase then navigate there and copy the link. If not, copy the `HTTPS` link.
+5. Go back into your terminal and enter `git clone` and paste your copied link at the end. If you would like the repository folder to be named something other than what the actual repository is called then add it to the end. Here is an example using `HTTPS` of our wiki repo, renamed to knowledge. `git clone https://github.com/CreativeSolutionsGroup/wiki.git knowledge`
+6. You should now have a clone of the repository on your system.
 
 ### Working on a repo
 
-This comprises all the commands of actual work on the repo. These will be in order if you are just starting work for the day with no branch.
+This is a compliation of all the commands used within a repository. They are in order, beginning with the assumption you have not yet created a `feature/`, `fix/` or `update/` branch.
 
 #### Selecting a task
 
 1. Navigate to our [project Kanban board](https://github.com/orgs/CreativeSolutionsGroup/projects/9).
-2. From here select one of the items in the `Todo` section that you have been assigned to.
+2. From here select one of the items in the `Todo` section that either you or no one has been assigned to.
 3. Move the task into the `In Progress` column.
 4. From here you can click `Open in new tab` on the right side.
 5. Now you want to create a new branch associated with your work by clicking on the link under `Development` labeled `Create a branch`.
@@ -98,7 +98,7 @@ This comprises all the commands of actual work on the repo. These will be in ord
     - Then describe what the task is in as few characters as possible.
     - For example, I would consider the branch that I am working on creating this GitHub page, `feature/github-page`.
 7. You can then select `checkout locally` or `open branch with GitHub desktop`, and click `Create branch`.
-8. You are now good to [switch to the branch](#switching-branches).
+8. You are now good to [switch branches](#switching-branches).
 
 #### Getting all changes from GitHub
 

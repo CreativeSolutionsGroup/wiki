@@ -4,7 +4,7 @@
 
 [Home](../../Readme.md) / [Dev Tools](../dev-tools.md) / [Duo](tool.md)
 
-This is the two-factor authentication application used on the Cedarville accounts. Unfortunately, you are not able to choose any different two-factor apps. As a student worker, you are required to use Duo.
+This is the two-factor authentication application used with Cedarville accounts. You are not able to choose any other two-factor app; as a student worker, you are required to use Duo.
 
 ## Installation
 
