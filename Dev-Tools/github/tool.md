@@ -80,12 +80,12 @@ Cloning a repository is a necessary first step to work on any repository. It cre
 
 ### Working on a repo
 
-This is a compliation of all the commands used within a repository. They are in order, beginning with the assumption you have not yet created a `feature/`, `fix/` or `update/` branch.
+Here is a compliation of all the commands used within a repository. They are in order, with the assumption you have not yet created a `feature/`, `fix/` or `update/` branch.
 
 #### Selecting a task
 
 1. Navigate to our [project Kanban board](https://github.com/orgs/CreativeSolutionsGroup/projects/9).
-2. From here select one of the items in the `Todo` section that either you or no one has been assigned to.
+2. From here select one of the items in the `Todo` section that you (or no one) have been assigned to.
 3. Move the task into the `In Progress` column.
 4. From here you can click `Open in new tab` on the right side.
 5. Now you want to create a new branch associated with your work by clicking on the link under `Development` labeled `Create a branch`.
@@ -103,36 +103,36 @@ This is a compliation of all the commands used within a repository. They are in 
 #### Getting all changes from GitHub
 
 1. Get back to the main branch by running `git checkout main`.
-2. Run `git pull`. This will get all of the changes from the remote source on GitHub for your current branch and those built off of it. So in turn it will grab all of the changes in the repo. You will still need to run `git pull` on any branch that you have previously worked on if you need to go back to them and there are changes made to it.
+2. Run `git pull`. This will get all of the changes from the remote `main` on GitHub, updating your local `main`. Every time an update is pushed to the repository's `main` you will need to run `git pull` to see the updated status for any of your already-created branches. New branches will automatically pull the latest updates from `main` when created.
 
 #### Creating a branch
 
-If you did not create the branch in the previous section then you can do so in a few different ways. It is recommended that you still link the branch to whatever branch you are working on though. First, you will want to [update your local repo](#getting-all-changes-from-github).
+If you did not create the branch in the previous section then you can do so in a few different ways. It is recommended that you still link the branch to whatever branch you are working on, however. First, you will want to [update your local repo](#getting-all-changes-from-github).
 
 - `git checkout -b <BRANCH NAME>` will create a new local branch and move you to it.
 - `git switch -c <BRANCH NAME>` will also create a new local branch and move you to it. However, this command will also move any uncommitted changes as well.
 
-Now that you have a new local branch and are moved to it, you will need to push the branch back to the repo. `git push --set-upstream origin <BRANCH NAME>` will do this for you. You may also shorten it to `git push -u origin <BRANCH NAME>`
+Now that you have a new local branch and are moved to it, you will need to push the branch to the repo. `git push --set-upstream origin <BRANCH NAME>` will do this for you. You may also shorten it to `git push -u origin <BRANCH NAME>`
 
 #### Switching branches
 
 1. Make sure there are no active changes on the branch you are currently on. This can be done by either removing, committing, or stashing the changes.
-    - Removing: To remove you have to do one of two commands. 
-        - To reset the branch to the previous commit use `git reset --hard`. Keep in mind that this will remove **ALL** of the changes. It is recommended that you first use `git status` to make sure that none of the changes should be committed.
-        - To remove specific files do `git restore <FILE>`. This will restore any changes to the previous commit. Keep in mind that if there are any leftover changes you will still have to either commit or stash them still
-        - Committing: You can find the steps for committing your changes farther down on the page or by clicking [here](#committing-changes).
-    - Stashing: By stashing you are saving all active changes and allowing use later. You can stash by using `git stash` and recollect by using `git stash pop`. You can pop the stash on any branch in the repo. Keep in mind that there is a faster way rather than stashing your changes if you plan on just moving your changes to another branch using the `switch` command found in step 2b.
-2. You can now change the branch you are on. There are two ways to do that using commands.
+    - *Removing*: To remove you have to do one of two commands: 
+        - To reset the branch to the previous commit use `git reset --hard`. Keep in mind that this will remove **ALL** of the changes. It is recommended that you first use `git status` to make sure that you desire **none** of the changes to be committed.
+        - To remove specific files use `git restore <FILE>`. This will restore any changes to the previous commit. Keep in mind that if there are any leftover changes you will still have to either commit or stash them.
+    - *Committing*: You can find the steps for committing your changes further down the page or by clicking [here](#committing-changes).
+    - *Stashing*: By stashing you are saving all active changes but storing them for use later. You can stash by using `git stash` and "unstash" by using `git stash pop`. You can pop the stash on any branch in the repo. Keep in mind that a faster way to move your changes to another branch is by using the `switch` command found in step 2b.
+2. You can now change the branch you are on. There are two ways to do that:
     - `Checkout`: This is an older way of changing branches. Using `git checkout <BRANCH NAME>` you will switch to an already existing branch as long as there are no uncommitted changes.
-    - `Switch`: This way is newer and works a bit faster. It includes a few perks, like moving any uncommitted changes without having to stash them. Using `git switch <BRANCH NAME>` you will switch to an existing branch carrying over any uncommitted changes. This avoids the need to stash, change branches, then pop the stash.
+    - `Switch`: This way is newer and works a bit faster. It includes a few perks, like moving any uncommitted changes without having to stash them. Using `git switch <BRANCH NAME>` you will switch to an existing branch carrying over any uncommitted changes. This avoids the need to stash, change branches, and then pop the stash.
 
 #### Committing changes
 
-When you have reached a milestone on the task or have finished up your work it is recommended you save all your changes to the repo. That is where committing comes into play.
+When you have reached a milestone on the task or have finished up your work it is recommended you save all your changes to the repository. That is where committing comes into play.
 
-1. First, run `git status` to make sure that all of the changed files show up on the list.
+1. First, run `git status` to make sure that all of the changed files show up.
 2. Run `git add .` which will stage all of the changes to be committed.
-3. Run `git commit -m "<COMMIT MESSAGE>"` to commit your changes. The commit message should comprise the changes you made in an easy-to-understand message. It will allow for easy backtracking later.
+3. Run `git commit -m "<COMMIT MESSAGE>"` to commit your changes. The commit message should explain the changes you made in an easy-to-understand manner. It will allow for easy backtracking later, if necessary.
 4. Run `git push` to push all commits to GitHub. If you get a warning that says that you do not have all remote changes run `git pull` and then `git push`.
 
 At this point you are free to keep working, however, if this is the end of your task you have a few more steps to complete.
@@ -141,20 +141,20 @@ At this point you are free to keep working, however, if this is the end of your 
 2. Move the task you were working on from `In Progress` to `Ready for Review`.
 3. Open the task in a new tab.
 4. Select the `Pull Requests` tab at the top.
-5. There should be a green bar that shows the branch you were on and offers to make a pull request for it. Click that button and go to step 8. If there is not, then you will need to click the `New pull request` button.
+5. There should be a green bar that shows the branch you were on and an offer to make a pull request for it. Click that button and go to step 8. If there is not, then you will need to click the `New pull request` button.
 6. Make sure the `base` branch is `main`, and then change the `compare` branch to the branch you were working on.
 7. Select `View pull request`.
-8. Go under the `reviewers` section and add your direct exec to review.
-9. In the comments field add `Closes #<Task Number>.`. The task number can be found on your original task. After that add a description of the changes made on this branch. If testing requires extra steps, make sure to add those in the description as well.
-10. Submit the pull request and you are done. It would be a good idea to let your reviewer know that it is ready so that they can test it sooner.
+8. Go under the `reviewers` section and add your direct executive to review.
+9. In the comments field add `Closes #<Task Number>.`. The task number can be found on your task in the Kanban board. After that, add a description of the changes made on the branch. If testing requires extra steps, make sure to add those in the description also.
+10. Submit the pull request. It is good practice to let your reviewer know the pull request is ready. You can do this by copying the link in your search bar and sending it to your reviewer through Microsoft Teams.
 
 #### Reviewing Changes
 
-1. Check that all checks and tests were successful. If there were any failures, figure out why and leave a comment about it.
+1. Ensure all checks and tests were successful. If there were any failures, figure out why and leave a comment about it.
 2. Check files for quality. Your job is not to rewrite the code, but to make sure that what is there keeps with the Cedarville quality of code.
-3. If you see anything wrong select those lines and leave a comment about them.
-4. Once all wrongs are selected, click the `Review Changes` button at the top and leave an overall comment. Select `Request Changes` and then `Submit Review`.
-5. If everything was good then click the `Review Changes` button at the top and leave an overall comment. Commonly we will say `lgtm` meaning `looks good to me`. Select `Approve` and then `Submit Review`.
+3. If you see anything wrong select those lines and leave a comment specifying the problem.
+4. Once all issues are addressed, click the `Review Changes` button at the top and leave an overall comment. Select `Request Changes` and then `Submit Review`.
+5. If there were no issues, click the `Review Changes` button at the top and leave an overall comment. Commonly we will say `LGTM` meaning `looks good to me`. Select `Approve` and then `Submit Review`.
 6. If approved, head back to the conversation tab and select `Merge pull request`.
 
 ## Helpful Tools
