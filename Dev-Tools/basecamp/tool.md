@@ -16,7 +16,7 @@ This is our operational taskboard. It is used mainly by the executives on all CE
 [![mac intel install button](./images/mac-intel-install.png)](https://bc3-desktop.s3.amazonaws.com/mac/basecamp3.dmg)
 [![windows install button](./images/windows-install.png)](https://bc3-desktop.s3.amazonaws.com/windows/basecamp3setup.exe)
 
-2. Log in using your email. SSO does not work on this application, so it must be in the text field.
+2. Login using your email. SSO does not work on this application, so it must be in the text field.
 
 <img src="./images/login-field.png" width=600px alt="log in location"/>
 

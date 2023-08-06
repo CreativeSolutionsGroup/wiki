@@ -10,7 +10,7 @@
 
 ## Prod Perspective
 
-<img src="./images/bz-comm.png" width=100px alt="BZ Commendations Home"/>
+<img src="./images/bz-comm.png" width=600px alt="BZ Commendations Home"/>
 
 From a production perspective, [BZ Commendations](https://bz-cedarville.com/) is a platform used by all CE members and staff to foster encouragement and excellence by intentionally seeking to commend jobs **well done**. Commendations can be sent to individuals or collectively to a [team](https://bz-cedarville.com/team). There is also an [admin dashboard](https://bz-cedarville.com/admin), and a space to view your sent and received commendations.
 
