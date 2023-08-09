@@ -2,7 +2,7 @@
 
 [Home](Readme.md)
 
-This comprises all of the need-to-know knowledge within CSG and should be updated with new information and methods whenever possible. On each page, there will be breadcrumbs to the previous page, and should be the biggest idea possible for the section. A good rule to go by is, if you think it should be split up, split it up. This page shall comprise a table of contents With the main section towards the top and an easy way to get to everything else using `ctrl+f`. If you have any questions please contact an exec. Or if you believe something should be here, please add it and make a PR request. The goal is to make the information as accessible as possible for anyone on the team.
+This wiki is a compliation of **need-to-know** CSG-related information; it should be updated at the earliest convenience when new information arises. Each page contains a header which can be used to navigate to its previous page and [Home](Readme.md), as well as an introduction pertaining to the big idea of the present application. As the wiki is updated, a good rule to maintain is if the information would be better understood split up, split it up. A table of contents is available here, on the [Home](Readme.md) page, and can be searched using `ctrl+f`. If you have any questions please contact an executive. If you believe some essential information is missing, please add it and make a PR. High visibility and accessability is the goal.
 
 ---
 
@@ -19,6 +19,9 @@ This comprises all of the need-to-know knowledge within CSG and should be update
     - [Installation](./Dev-Tools/microsoft-teams/tool.md#installation)
     - [How to use](./Dev-Tools/microsoft-teams/tool.md#how-to-use)
     - [FAQ](./Dev-Tools/microsoft-teams/tool.md#faq)
+  - [BZ Commendations](./Dev-Tools/bz-comm/tool.md)
+    - [Prod perspective](./Dev-Tools/bz-comm/tool.md#prod-perspective)
+    - [Dev perspective](./Dev-Tools/bz-comm/tool.md#dev-perspective)
   - [Basecamp](./Dev-Tools/basecamp/tool.md)
     - [Installation](./Dev-Tools/basecamp/tool.md#installation)
     - [How to use](./Dev-Tools/basecamp/tool.md#how-to-use)

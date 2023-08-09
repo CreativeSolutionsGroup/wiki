@@ -12,4 +12,4 @@ Search for `CodeLLDB` in the VSCode Extensions tab and install it.
 
 ## How to use
 
-When within the main file of a Rust application there should now be `Run | Debug` options over the main function. Just use either one to run the Rust program within VSCode.
+When within the main file of a Rust application there should now be `Run | Debug` options over the main function. Use either one to run the Rust program within VSCode.
