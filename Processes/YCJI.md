@@ -4,9 +4,9 @@ Yellow Jacket Check In works off of Google Sheets.
 
 ## Adding allowed users
 
-To add allowed users, please paste all of the emails row by row into the *ALLOWED-USERS* subsheet.
+To add allowed users, paste their emails row by row into the *ALLOWED-USERS* subsheet found at the bottom of the *[current year] GS - New Student Master List*, stored in the shared CE Drive. Do **not** delete the headers: *email, first_name, last_name*.
 
-It might list their first and last names, but do not worry about this. That's extra information for our use.
+The columns *first_name* and *last_name* are optional - they provide additional information for CSG use. The *email* column, however, is **required**.
 
 ## Adding test users
 
