@@ -8,9 +8,10 @@ This is the payroll system used by Cedarville University. It is how you clock in
 
 ## Installation
 
-### Desktop
-
 ### Mobile
+
+1. Company code: `cedarville`
+2. SSO with Cedarville email
 
 ## How to use
 
