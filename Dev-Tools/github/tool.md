@@ -40,7 +40,7 @@ SSH contains better protection and authentication when working on repositories. 
 2. Enter `ls` and look for two different files: `id_rsa` and `id_rsa.pub`.
 3. If you have both skip to step 6.
 4. Create public/private keys by entering this command: `ssh-keygen -t rsa -C "your_email@example.com"`. Make sure to use the same email from the setup above.
-5. Copy the contents of the `id_rsa.pub` file. With PowerShell use `cat .\id_rsa.pub | clip` or on mac use `pbcopy < ~/.ssh/id_rsa.pub`.
+5. Copy the contents of the `id_rsa.pub` file. With PowerShell use `cat ~\.ssh\id_rsa.pub | clip` or on mac use `pbcopy < ~/.ssh/id_rsa.pub`.
 6. You will now navigate to the [GitHub profile settings](https://github.com/settings/profile).
 7. Click on `SSH and GPG keys` on the left side.
 8. Select `New SSH key`.
