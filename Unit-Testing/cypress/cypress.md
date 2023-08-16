@@ -16,7 +16,7 @@ Consider:
     - `npm install --save-dev cypress`
     - `yarn add cypress --dev`
 2. Add Cypress to the `package.json` scripts field *only if* using `npm`: 
-```
+```ts
 {
   "scripts": {
     "dev": "next dev",

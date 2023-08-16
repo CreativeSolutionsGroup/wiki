@@ -15,7 +15,7 @@ Components are logical units of an application that range in size from fairly sm
 The first step in testing a component is to `mount` it. This renders the component into a testbed and enable's the use of the Cypress API to select elements, interact with them, and run assertions.
 
 To mount a React component, import the component into your spec `import { mount } from 'cypress/react'` and pass the component to the cy.mount command:
-```
+```ts
 it('mounts', () => {
   cy.mount(<Stepper />)
   //Stepper should have initial count of 0 (default)
@@ -39,7 +39,7 @@ Intention:
 - Assert that a button component has the correct text: `Click me!`
 
 Implementation:
-```
+```ts
 import Button from './Button'
 
 it('uses custom text for the button label', () => {

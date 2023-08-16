@@ -44,7 +44,7 @@ Intention:
 8. Assert the input reflects the new value
 
 Implementation:
-```
+```ts
 describe('My First Test', () => {
   it('Gets, types and asserts', () => {
     cy.visit('https://example.cypress.io')
