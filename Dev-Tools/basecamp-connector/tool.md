@@ -1,8 +1,14 @@
-# Creating a Connector
+# Google Forms ➡️ Basecamp
 
-(Notice it's a connector not a webhook. For more information there see the [Technical Details](./technical.md))
+## Overview
 
-## Setting up the environment
+This project started out as a simple idea that we could use the "onsubmit" action on a Google form to trigger an update in Basecamp that would create a card detailing what needed to be done. Originally Westin had the idea for a few forms that the team was manually transferring information from Forms to Basecamp for, but the project became more complex than that in the end.
+
+We now have the capability to create both todo list items and cards on the card table, and will soon have a feature to allow the connector to assign people to a card by default.
+
+## Creating Connectors
+
+### Setting up the environment
 
 Thankfully the Google Apps Script environment has everything that you would need for making a device like this.
 There aren't too many things you have to do to set up the new project. The most important thing is making sure that you have edit access to the form.
@@ -31,6 +37,8 @@ Change the function to run to be your newly created function and set the event t
 ![Add trigger dialog](./images/trigger_details_dialog.png)
 
 Press save and then you have your project all set up. You can now start to code the actual connector.
+
+### Coding the connector
 
 Head back to the code page and then copy and paste this code into the editor. This is a template for how to set up the connector.
 
