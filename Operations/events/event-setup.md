@@ -6,7 +6,7 @@ NOTE: If you have not, please read [this](#what-if-the-boopers-were-used-last-ni
 
 ## How To
 
-1. Open [admin.cusmartevents.com] and login with your Cedarville email.
+1. Open [admin.cusmartevents.com](admin.cusmartevents.com) and login with your Cedarville email.
 2. Create a new event in the second table.
 3. Associate each client with an event by clicking on each client and changing their event to the relevant one.
 
@@ -17,6 +17,7 @@ It is likely that there is a diagram supplied by your higher ups for where to pl
 1. A client
 2. A booper
 3. WiFi (optional, but you will need to do [this](#what-if-the-boopers-were-used-last-night-in-a-place-with-no-wifi) afterwards.)
+4. A-Frame for displaying that there is a checkin system here.
 
 ## What If...
 
