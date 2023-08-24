@@ -34,20 +34,19 @@ Keep in mind that your email should be the one used to create your GitHub accoun
 
 ### SSH setup (optional)
 
-SSH contains better protection and authentication when working on repositories. It is not required for CSG, but is recommended that you consider it.
+SSH offers better protection and authentication when working on repositories. It is not required for CSG, but is highly recommended.
 
 1. Open a terminal/shell and enter `cd .\.ssh\`
 2. Enter `ls` and look for two different files: `id_rsa` and `id_rsa.pub`.
-3. If you have both skip to step 6.
+3. If you have both skip to step 5, else continue to step 4.
 4. Create public/private keys by entering this command: `ssh-keygen -t rsa -C "your_email@example.com"`. Make sure to use the same email from the setup above.
-5. If it asks for a file to save the key, enter `id_rsa`. If it asks for a passphrase enter either something you will remember or leave it empty.
-6. Copy the contents of the `id_rsa.pub` file. With PowerShell use `cat .\id_rsa.pub | clip` or on mac use `pbcopy < ~/.ssh/id_rsa.pub`.
-7. You will now navigate to the [GitHub profile settings](https://github.com/settings/profile).
-8. Click on `SSH and GPG keys` on the left side.
-9. Select `New SSH key`.
-10. Give the key a name linking you back to the device you are on, and then paste the contents into the `Key` box.
-11. After saving, go back into the terminal and enter `ssh -T git@github.com` to test that it worked.
-12. You will likely get something along the lines of...
+5. Copy the contents of the `id_rsa.pub` file. With PowerShell use `cat ~\.ssh\id_rsa.pub | clip` or on Mac `pbcopy < ~/.ssh/id_rsa.pub`.
+6. You will now navigate to the [GitHub profile settings](https://github.com/settings/profile).
+7. Click on `SSH and GPG keys` on the left side.
+8. Select `New SSH key`.
+9. Give the key a name linking you back to the device you are on, and then paste the contents into the `Key` box.
+10. After saving, go back into the terminal and enter `ssh -T git@github.com` to test that it worked.
+11. You will likely get something along the lines of...
 
 ```ps
 The authenticity of host 'github.com (140.82.112.3)' can't be established.
@@ -56,9 +55,8 @@ This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
-you should enter `yes`.
-
-13. If you end up getting something like `Hi username! You've successfully authenticated, but GitHub does not provide shell access.` Then everything worked successfully and you can use SSH for your repos.
+12. Enter `yes`.
+13. If you get something like `Hi username! You've successfully authenticated, but GitHub does not provide shell access.` the setup was successful.
 
 ## How to use
 
