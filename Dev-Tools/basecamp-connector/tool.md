@@ -43,29 +43,39 @@ Press save and then you have your project all set up. You can now start to code 
 Head back to the code page and then copy and paste this code into the editor. This is a template for how to set up the connector.
 
 ```js
+// The location to send the information
 const postUrl = "https://forms-basecamp-link.creativesolutions.workers.dev/";
+// List IDs for multiple destination forms
 const locations = {
   SELECTOR_TEXT_1: "1234567890",
   SELECTOR_TEXT_2: "2345678901",
 };
 
 function onSubmit() {
+  // Grabs the last form submission and all the answers from it
   const formItems = CloudflareLibrary.getFormItems(FormApp.getActiveForm());
+  // Log for debugging
   console.log(formItems);
+  // Choose where to send the form data
   const requestType = formItems["SECTION_SELECTOR"];
+  // Content will be the HTML that we send to the Cloudflare connector
   let content = `
       <h3>Requester: ${formItems["NAME_FIELD"]}</h3>
       <h4>Cell phone: ${formItems["CELL_FIELD"]}</h4>
       <h4>Email: ${formItems["EMAIL_FIELD"]}</h4>
   `;
 
+  // We may have different fields for the different request types
   switch (requestType) {
+    // This should be the same as the first item in the locations object up above
     case "SELECTOR_TEXT_1":
+      // We append any new content to the end of the content string
       content += `
         <h3>ITEM_1:</h3>
         <p>${formItems["ITEM_1"]}</p>
       `;
       break;
+    // Same as above, except the second item in locations
     case "SELECTOR_TEXT_2":
       content += `
         <h3>ITEM_2</h3>
@@ -73,20 +83,29 @@ function onSubmit() {
       `;
       break;
     default:
+      // We didn't find a matching request type
       console.error("No request type selected");
       return;
   }
 
   const payload = {
+    // The URL of the connector
     postUrl,
-    type: "list", // or "card_table"
+    // Type of item to create
+    // Should be either list or card_table
+    type: "list",
+    // The project ID found in the URL after buckets e.g. https://3.basecamp.com/WORKSPACE_NUMBERS/buckets/PROJECT_ID
     projectId: "98765432",
+    // The sub location ID which is found at the very end of the URL
     subId: locations[requestType], // or a constant value
     title: "TITLE_GOES_HERE",
+    // The HTML formatted content string
     content,
+    // What to set the due date to
     due_on: "", // defaults to a week in the future
   };
 
+  // Actually send the data now
   CloudflareLibrary.sendDataToCloudflare(payload);
 }
 ```
