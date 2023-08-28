@@ -8,10 +8,12 @@ This is the payroll system used by Cedarville University. It is how you clock in
 
 ## Installation
 
+We recommend installing Dayforce on mobile so you can feasibly clock in and out as you work. Go to your local Google Play (Android) or App Store (Apple) and type in `Dayforce`. Click 
+
 ### Mobile
 
 1. Company code: `cedarville`
-2. SSO with Cedarville email
+2. SSO with Cedarville credentials
 
 ## How to use
 
