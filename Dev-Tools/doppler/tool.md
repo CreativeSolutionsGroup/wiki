@@ -100,8 +100,8 @@ When logging in you will want to use your Cedarville account. You should have re
 
 The default command for anything now will have `doppler run &&` attached to the front of it. Doppler needs to give you the secrets before you can do things like run the application or access prisma. Here a few examples of popular commands
 
-- `doppler run && prisma studio`
-- `doppler run && next dev`
+- `doppler run -- prisma studio`
+- `doppler run -- next dev`
   - This one in particular may be different. Within the `package.json` we are able to setup commands that run a different set of commands. For instance, in most project we setup `yarn dev` to run `next dev`. After adding doppler to the project `yarn dev` will likely run the doppler part as well.
 
 ### Updating
