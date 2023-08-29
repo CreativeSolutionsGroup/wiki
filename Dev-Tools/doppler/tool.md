@@ -40,15 +40,47 @@ flowchart LR
 
 ## Installation
 
-Instillation is pretty simple. You can visit <https://docs.doppler.com/docs/install-cli> to follow the steps for your specific OS.
+### Windows
 
-When logging in you will want to use your Cedarville account. You should have received an email invitation from Doppler to join our group. If you have not accepted the invitation please do.
+1. Open a powershell window in administrator mode
+2. Install scoop
+   1. Run this command `iwr -useb get.scoop.sh | iex`
+   2. If you got an error, run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser` and try again.
+3. Close the powershell window, and then open it up again. This is to allow scoop to work.
+4. Run `scoop bucket add doppler https://github.com/DopplerHQ/scoop-doppler.git` and `scoop install doppler`. 
+5. Run `doppler --version` to ensure that doppler is installed.
+
+### Mac
+
+1. Open a terminal
+2. Install Homebrew
+
+```shell
+export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
+export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+3. Sorry I can't instruct anymore on Homebrew installation, as I don't have a mac to test.
+4. Run `brew install gnupg` and then `brew install dopplerhq/cli/doppler`
+5. Run `doppler --version` to ensure that doppler is installed.
+
+### Linux (Debian 11+ / Ubuntu 22.04+)
+
+```shell
+sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+curl -sLf --retry 3 --tlsv1.2 --proto "=https" 'https://packages.doppler.com/public/cli/gpg.DE2A7741A397C129.key' | sudo gpg --dearmor -o /usr/share/keyrings/doppler-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/doppler-archive-keyring.gpg] https://packages.doppler.com/public/cli/deb/debian any-version main" | sudo tee /etc/apt/sources.list.d/doppler-cli.list
+sudo apt-get update && sudo apt-get install doppler
+```
+
+After that run `doppler --version` to ensure that doppler is installed.
 
 ## How to use
 
 ### Authentication
 
-*If you didn't do this during installation.*
+When logging in you will want to use your Cedarville account. You should have received an email invitation from Doppler to join our group. If you have not accepted the invitation please do.
 
 1. Open your terminal and run `doppler login`
 2. This should open a web window prompting you to login
@@ -68,5 +100,9 @@ The default command for anything now will have `doppler run &&` attached to the 
 - `doppler run && prisma studio`
 - `doppler run && next dev`
   - This one in particular may be different. Within the `package.json` we are able to setup commands that run a different set of commands. For instance, in most project we setup `yarn dev` to run `next dev`. After adding doppler to the project `yarn dev` will likely run the doppler part as well.
+
+### Updating
+
+Updating doppler is very easy. Just run `doppler update` and it should properly update for you.
 
 ## FAQ
