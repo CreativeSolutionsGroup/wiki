@@ -42,13 +42,16 @@ flowchart LR
 
 ### Windows
 
-1. Open a powershell window in administrator mode
-2. Install scoop
-   1. Run this command `iwr -useb get.scoop.sh | iex`
-   2. If you got an error, run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser` and try again.
-3. Close the powershell window, and then open it up again. This is to allow scoop to work.
-4. Run `scoop bucket add doppler https://github.com/DopplerHQ/scoop-doppler.git` and `scoop install doppler`. 
-5. Run `doppler --version` to ensure that doppler is installed.
+1. Download Winget from the microsoft store.
+   1. Open the `Microsoft Store` app on your computer
+   2. Search for `winget`
+   3. Install the app shown below if it hasn't been yet
+
+![winget app](./images/ms-winget.png)
+
+2. Open a powershell window in administrator mode.
+3. Run `winget install doppler`
+4. Run `doppler --version` to ensure that doppler is installed.
 
 ### Mac
 
