@@ -22,11 +22,12 @@ Here, we need to export data from Smart Events into the data source for Tableau.
 
 ## How To
 
-1. Go [here](https://sso.online.tableau.com/public/idp/SSO) and begin to log in with `creativesolutions@cedarville.edu`
-- This should bring you to the SSO page for tableau.
+1. Go [here](https://sso.online.tableau.com/public/idp/SSO) and begin to log in with `creativesolutions@cedarville.edu`. This should bring you to the SSO page for tableau.
 2. Go to [here](https://prod-useast-a.online.tableau.com/#/site/cedarvilleuniversity/workbooks/1094976/views) after you have logged in.
-3. Select the event that you want to export.
-4. Select the top right button to download a PDF.
-5. Select on the prompt "Specific sheets from this workbook"
-6. Select "Select All"
-7. Click "Download"
+3. Select the event you want to export.
+- If you want to export an entire month or semester, make sure to whittle that down with the top two options. Select "all" on events.
+- Otherwise, select the individual event that you want.
+5. Select the top right button to download a PDF.
+6. Select on the prompt "Specific sheets from this workbook"
+7. Select the last 6 pages.
+8. Click "Download"
