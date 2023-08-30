@@ -58,6 +58,15 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 12. Enter `yes`.
 13. If you get something like `Hi username! You've successfully authenticated, but GitHub does not provide shell access.` the setup was successful.
 
+### Default Tracking (optional)
+
+Default tracking is the process of setting up git on your computer to always point new branches to the origin. It removes the need to explicitly tell a branch to point towards the origin.
+
+1. Open a terminal
+2. Check your git version with `git --version`. You need to have version 2.37+
+   1. If you are not updated make sure to update git before continuing and refresh your terminal
+3. Run `git config --global --add --bool push.autoSetupRemote true`
+
 ## How to use
 
 You will be able to access all of the repos by going to our [organization page](https://github.com/CreativeSolutionsGroup). Once inside a repository, there are a few things you will need to know how to do.
