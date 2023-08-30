@@ -50,8 +50,8 @@ flowchart LR
 ![winget app](./images/ms-winget.png)
 
 2. Open a powershell window in administrator mode.
-3. Run `winget install doppler`
-4. Run `doppler --version` to ensure that doppler is installed.
+3. Run `winget install Doppler.doppler`
+4. Restart your powershell, and Run `doppler --version` to ensure that doppler is installed.
 
 ### Mac
 
@@ -66,7 +66,7 @@ export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebre
 
 3. Sorry I can't instruct anymore on Homebrew installation, as I don't have a mac to test.
 4. Run `brew install gnupg` and then `brew install dopplerhq/cli/doppler`
-5. Run `doppler --version` to ensure that doppler is installed.
+5. Restart your terminal, and Run `doppler --version` to ensure that doppler is installed.
 
 ### Linux (Debian 11+ / Ubuntu 22.04+)
 
@@ -77,7 +77,7 @@ echo "deb [signed-by=/usr/share/keyrings/doppler-archive-keyring.gpg] https://pa
 sudo apt-get update && sudo apt-get install doppler
 ```
 
-After that run `doppler --version` to ensure that doppler is installed.
+Restart your terminal, and Run `doppler --version` to ensure that doppler is installed.
 
 ## How to use
 
