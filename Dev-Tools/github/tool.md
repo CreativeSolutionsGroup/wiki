@@ -60,7 +60,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 ### Default Tracking (optional)
 
-Default tracking is the process of setting up git on your computer to always point new branches to the origin. It removes the need to explicitly tell a branch to point towards the origin.
+Default tracking enables your local installation of git to always point new branches to the origin. It removes the need to explicitly tell the branch.
 
 1. Open a terminal
 2. Check your git version with `git --version`. You need to have version 2.37+
