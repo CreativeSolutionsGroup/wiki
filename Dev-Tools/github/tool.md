@@ -58,6 +58,21 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 12. Enter `yes`.
 13. If you get something like `Hi username! You've successfully authenticated, but GitHub does not provide shell access.` the setup was successful.
 
+### Powershell Extensions (optional for Windows)
+
+There are two different extensions that are recommended to be added for anyone using powershell to access git. These just help speed up your own work and provide a bit of visual feedback to what is happening on the current branch.
+
+#### Tab completion
+
+1. Open powershell and run ``Add-Content $PROFILE.CurrentUserAllHosts "`nSet-PSReadlineKeyHandler -Chord Tab -Function MenuComplete"``
+2. Reset powershell and type `cd` and press tab. If you get a few options under the current typed line then the setup was successful.
+
+#### Git status
+
+Follow the [posh-git instructions](https://github.com/dahlbyk/posh-git#installation). They have great documentation. If you can navigate to a git repo and see something resembling the following picture, then you were successful in setting it up. Don't worry about the green and red numbers right now, those are staged/upstaged changes. The main goal is to see the branch name at the moment.
+
+![posh-git example](https://github.com/dahlbyk/posh-git/wiki/images/PromptDefaultLong.png)
+
 ## How to use
 
 You will be able to access all of the repos by going to our [organization page](https://github.com/CreativeSolutionsGroup). Once inside a repository, there are a few things you will need to know how to do.
