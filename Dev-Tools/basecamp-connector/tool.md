@@ -115,3 +115,7 @@ Take note that the formItems may have spaces after them, which need to be accoun
 This is the template for a multiple location todo list script, but can be easily modified for any other needs such as card tables or single destination forms.
 
 Full HTML is supported so you can style using CSS and use any HTML tags that you want.
+
+## See also
+
+[Worker Documentation](./worker.md)

@@ -67,6 +67,21 @@ Default tracking enables your local installation of git to always point new bran
    1. If you are not updated make sure to update git before continuing and refresh your terminal
 3. Run `git config --global --add --bool push.autoSetupRemote true`
 
+### Powershell Extensions (optional for Windows)
+
+There are two different extensions that are recommended for installation for anyone using powershell to access git. These help speed up your own work and provide a bit of visual feedback to what is happening on the current branch.
+
+#### Tab completion
+
+1. Open powershell and run ``Add-Content $PROFILE.CurrentUserAllHosts "`nSet-PSReadlineKeyHandler -Chord Tab -Function MenuComplete"``
+2. Reset powershell; type `cd` and press tab. If you get a few options under the current typed line then the setup was successful.
+
+#### Git status
+
+Follow the [posh-git instructions](https://github.com/dahlbyk/posh-git#installation). They have great documentation. If you can navigate to a git repo and see something resembling the following picture, then you were successful in setup. Don't worry about the green and red numbers right now, those are staged/upstaged changes. The current goal is just to see the branch name.
+
+![posh-git example](https://github.com/dahlbyk/posh-git/wiki/images/PromptDefaultLong.png)
+
 ## How to use
 
 You will be able to access all of the repos by going to our [organization page](https://github.com/CreativeSolutionsGroup). Once inside a repository, there are a few things you will need to know how to do.
