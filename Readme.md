@@ -31,6 +31,7 @@ This wiki is a compliation of **need-to-know** CSG-related information; it shoul
   - [Basecamp Connector](./Dev-Tools/basecamp-connector/tool.md)
     - [Overview](./Dev-Tools/basecamp-connector/tool.md#overview)
     - [Creation](./Dev-Tools/basecamp-connector/tool.md#creating-connectors)
+    - [Worker](./Dev-Tools/basecamp-connector/worker.md)
   - [Dayforce](./Dev-Tools/dayforce/tool.md)
     - [Installation](./Dev-Tools/dayforce/tool.md#installation)
     - [How to use](./Dev-Tools/dayforce/tool.md#how-to-use)
