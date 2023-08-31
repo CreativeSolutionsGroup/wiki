@@ -58,6 +58,15 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 12. Enter `yes`.
 13. If you get something like `Hi username! You've successfully authenticated, but GitHub does not provide shell access.` the setup was successful.
 
+### Default Tracking (optional)
+
+Default tracking enables your local installation of git to always point new branches to the origin. It removes the need to explicitly tell the branch.
+
+1. Open a terminal
+2. Check your git version with `git --version`. You need to have version 2.37+
+   1. If you are not updated make sure to [update git](#updating-git) before continuing and refresh your terminal
+3. Run `git config --global --add --bool push.autoSetupRemote true`
+
 ### Powershell Extensions (optional for Windows)
 
 There are two different extensions that are recommended for installation for anyone using powershell to access git. These help speed up your own work and provide a bit of visual feedback to what is happening on the current branch.
@@ -170,8 +179,34 @@ At this point you are free to keep working, however, if this is the end of your 
 5. If there were no issues, click the `Review Changes` button at the top and leave an overall comment. Commonly we will say `LGTM` meaning `looks good to me`. Select `Approve` and then `Submit Review`.
 6. If approved, head back to the conversation tab and select `Merge pull request`.
 
-## Helpful Tools
+#### Updating Git
 
-- 
+##### Windows
+
+Version 2.16.1(2)+: `git update-git-for-windows`
+Version 2.14.2 to 2.16.1: `git update`
+
+##### Mac
+
+*With Homebrew installed and git originally installed with Homebrew:*
+
+Run `brew upgrade git`.
+
+*With Homebrew installed but git not originally installed with Homebrew:*
+
+Run `brew install git`. This will override the previous install and automatically update git for you.
+
+*Without Homebrew installed:*
+
+Either install the new version directly from the [git website](https://git-scm.com/download/mac), or install Homebrew with the following steps. The most recently updated version of git will automatically be installed with step 3.
+
+1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. `brew update`
+3. `brew install git`
+
+##### Linux
+
+1. Update system packages with `sudo apt-get update`
+2. Update git with `sudo apt-get install git`
 
 ## FAQ
