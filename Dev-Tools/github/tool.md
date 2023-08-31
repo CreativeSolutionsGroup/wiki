@@ -64,7 +64,7 @@ Default tracking enables your local installation of git to always point new bran
 
 1. Open a terminal
 2. Check your git version with `git --version`. You need to have version 2.37+
-   1. If you are not updated make sure to update git before continuing and refresh your terminal
+   1. If you are not updated make sure to [update git](#updating-git) before continuing and refresh your terminal
 3. Run `git config --global --add --bool push.autoSetupRemote true`
 
 ### Powershell Extensions (optional for Windows)
@@ -179,8 +179,32 @@ At this point you are free to keep working, however, if this is the end of your 
 5. If there were no issues, click the `Review Changes` button at the top and leave an overall comment. Commonly we will say `LGTM` meaning `looks good to me`. Select `Approve` and then `Submit Review`.
 6. If approved, head back to the conversation tab and select `Merge pull request`.
 
-## Helpful Tools
+#### Updating Git
 
-- 
+##### Windows
+
+Version 2.16.1(2)+: `git update-git-for-windows`
+Version 2.14.2 to 2.16.1: `git update`
+
+##### Mac
+
+*With Homebrew installed:*
+
+Run `brew upgrade git`
+
+If you haven't installed with Homebrew, but don't have git installed that way, just run `brew install git`. This will override the previous install and automatically update for you.
+
+*Without Homebrew installed:*
+
+Either go through the process of installing the new version from the [git website](https://git-scm.com/download/mac), or install Homebrew with the following steps.
+
+1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. `brew update`
+3. `brew install git`
+
+##### Linux
+
+1. Update system packages with `sudo apt-get update`
+2. Update git with `sudo apt-get install git`
 
 ## FAQ
