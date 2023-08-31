@@ -10,7 +10,7 @@ This is the payroll application used by Cedarville University. It is how you clo
 
 We recommend installing Dayforce on mobile so you can feasibly clock in and out as you work. Go to your local Google Play (Android) or App Store (Apple) and type in `Dayforce`. The application will appear as so:  
 
-<img src="./images/mobile_install.png" width=100px alt="Dayforce Mobile"/>
+<img src="./images/mobile_install.png" width=100px alt="Mobile"/>
 
 ### Login
 
