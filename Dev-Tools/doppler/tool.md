@@ -98,7 +98,7 @@ When logging in you will want to use your Cedarville account. You should have re
 
 ### Running commands
 
-The default command for anything now will have `doppler run &&` attached to the front of it. Doppler needs to give you the secrets before you can do things like run the application or access prisma. Here a few examples of popular commands
+The default command for anything now will have `doppler run --` attached to the front of it. Doppler needs to give you the secrets before you can do things like run the application or access prisma. Here a few examples of popular commands
 
 - `doppler run -- prisma studio`
 - `doppler run -- next dev`
