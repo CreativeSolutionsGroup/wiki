@@ -188,15 +188,17 @@ Version 2.14.2 to 2.16.1: `git update`
 
 ##### Mac
 
-*With Homebrew installed:*
+*With Homebrew installed and git originally installed with Homebrew:*
 
-Run `brew upgrade git`
+Run `brew upgrade git`.
 
-If you haven't installed with Homebrew, but don't have git installed that way, just run `brew install git`. This will override the previous install and automatically update for you.
+*With Homebrew installed but git not originally installed with Homebrew:*
+
+Run `brew install git`. This will override the previous install and automatically update git for you.
 
 *Without Homebrew installed:*
 
-Either go through the process of installing the new version from the [git website](https://git-scm.com/download/mac), or install Homebrew with the following steps.
+Either install the new version directly from the [git website](https://git-scm.com/download/mac), or install Homebrew with the following steps. The most recently updated version of git will automatically be installed with step 3.
 
 1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. `brew update`
