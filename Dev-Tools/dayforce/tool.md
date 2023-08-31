@@ -10,7 +10,7 @@ This is the payroll application used by Cedarville University. It is how you clo
 
 We recommend installing Dayforce on mobile so you can feasibly clock in and out as you work. Go to your local Google Play (Android) or App Store (Apple) and type in `Dayforce`. The application will appear as so:  
 
-<img src="./images/mobile_install.png" width=100px alt="Mobile"/>
+<img src="./images/mobile-install.png" width=200px alt="Mobile"/>
 
 ### Login
 
@@ -21,11 +21,11 @@ We recommend installing Dayforce on mobile so you can feasibly clock in and out 
 
 ### Navigation
 
-<img src="./images/bottom_bar.png" width=100px alt="Bottom Bar"/>
+<img src="./images/bottom-bar.png" width=200px alt="Bottom Bar"/>
 
 This will be your main source of navigation. This can be customized by click the `...` labeled `more`. This will bring to the following page:
 
-<img src="./images/menu.png" width=100px alt="Menu"/>
+<img src="./images/menu.png" width=200px alt="Menu"/>
 
 Click `edit`, in the top right corner. Drag the tabs you would like to appear in your navigation bar into the `FAVORITE TABS` section. The rest of the tabs (the ones remaining in `FEATURES`), will still be accessible, but only by first clicking `Menu` and then the desired tab.
 
@@ -37,13 +37,13 @@ If you click `Done`, you should see your favorited tabs now in your navigation b
 
 Click the `Timesheet` tab.
 
-<img src="./images/timesheet.png" width=100px alt="Timesheet"/>
+<img src="./images/timesheet.png" width=200px alt="Timesheet"/>
 
 Pay periods are every two weeks. You will see the current pay period in the top of your timesheet, as well as your current `Total hours` worked, and navigational arrows to view past and future pay periods. While we recommend manually clocking your hours (see section below), you can add shifts manually by clicking the `...` that appear next to each day. 
 
 A screen should appear similar to the following:
 
-<img src="./images/shift.png" width=100px alt="Shift"/>
+<img src="./images/time-shift.png" width=200px alt="Shift"/>
 
 Though there is a lot of information presented on this screen, it is fairly straight forward. 
 1. Toggle `Authorize`. This is a non-verbal committment that the hours you are recording are accurate to the best of your ability. This saves accounting an immense amount of time as non-authorized shifts have to manually authorized by them for every member of CE.  
@@ -59,13 +59,13 @@ You should ensure the shift correctly populated on your timesheet. Your `Total h
 
 Click the `Clock` tab.
 
-<img src="./images/clock.png" width=100px alt="Clock"/>
+<img src="./images/clock-in.png" width=200px alt="Clock"/>
 
 Clocking your hours is the recommended way to record your time. Simply press `Clock in` when you begin work. After clicking, the button will read `Clock out`. Press the button again when you are finished with your shift or are taking a break (remember to clock back in when you are finished). 
 
 Because manually clocking does not have an authorize button, it is good practice to go to your `Timesheet` before the end of each pay period, click the top right `...`, and select `Authorize`.
 
-<img src="./images/authorize.png" width=100px alt="Authorize"/>
+<img src="./images/authorize.png" width=200px alt="Authorize"/>
 
 ### Earnings
 
