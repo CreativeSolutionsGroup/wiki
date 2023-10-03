@@ -37,9 +37,19 @@ We deploy everything to Lightsail via docker. See https://aws.amazon.com/blogs/a
 The most important thing that you should do is make sure that this process is automated. Please see [here](https://github.com/CreativeSolutionsGroup/smart-events-api/blob/main/.github/workflows/docker-publish.yml) for how Smart Events API does this.
 
 ### Amplify Deployment
-***NOTE*** Env variables are set up specially! Please see other environments on Amplify for how we do this.
+Amplify is how we manage our web applications. It has a serverless functionality that allows us to only pay for what we use.
 
-https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html
+#### Creating a New App
+
+To create a new app, follow [this](https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html) guide.
+
+#### Domain Management
+
+To manage a domain for an app, realize that you have to have an application already created.
+
+To manage the domain for Amplify, please note that you should *purchase* your domain through [Route 53](#route-53).
+
+Next, go to the "Domain management" tab under the app settings for the app you are working on. Click "Add domain." By clicking on the textbox, you will see all the domains that you have registered under Route 53. To use them, click on the domain. Accept the default settings and it will automatically create your SSL config for you.
 
 ### RDS
 RDS is a beast. Esssentially, we have 2 branches: `dev` and `prod`, which correspond to temporary data and production data. As a developer, you should never have access to prod data. Please ask you executive if you believe you need access to this data before doing anything with it.
