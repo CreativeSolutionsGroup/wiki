@@ -51,6 +51,62 @@ To manage the domain for Amplify, please note that you should *purchase* your do
 
 Next, go to the "Domain management" tab under the app settings for the app you are working on. Click "Add domain." By clicking on the textbox, you will see all the domains that you have registered under Route 53. To use them, click on the domain. Accept the default settings and it will automatically create your SSL config for you.
 
+#### Preview Deployments
+
+This process will enable you to get Preview Deployments on an Amplify App. The preview deployment will automatically deploy a pull request on GitHub and put a link to the test deployment into the pull request.
+
+1. Update Build Settings
+   1. Go to `Build Settings` for your application
+   2. Use the following commands under `build/commands`
+      1. If you are not using Doppler for ENVs then you may ignore those lines.
+      2. If you have a problem with Doppler not installing right, make sure your app actually uses Doppler, and try moving the install command into the `preBuild` commands.
+      3. Make sure to replace `[replace-with-app-ID]` with the ID of the app. This appears in the URL of your current page, but you can also find it on the general settings under `App ARN` as the last string after a `/`.
+
+New Commands:
+
+```yaml
+- curl -Ls https://cli.doppler.com/install.sh | sh 
+- if [ "${AWS_BRANCH}" = "main" ]; then doppler setup -t ${DOPPLER_PRD_TOKEN} --no-interactive; fi
+- if [ "${AWS_BRANCH}" != "main" ]; then doppler setup -t ${DOPPLER_STG_TOKEN} --no-interactive; fi
+- if [ "${AWS_BRANCH}" != "main" ]; then echo "NEXTAUTH_URL=\"https://pr-${AWS_PULL_REQUEST_ID}.[replace-with-app-ID].amplifyapp.com/\"" > .env; fi
+- doppler run -- env | grep -e DATABASE_ -e GOOGLE_ -e NEXTAUTH_ -e BUILD_ >> .env
+- yarn prisma generate
+- yarn run build
+```
+
+Example end product used for bz-commendations:
+
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install
+    build:
+      commands:
+        - curl -Ls https://cli.doppler.com/install.sh | sh 
+        - if [ "${AWS_BRANCH}" = "main" ]; then doppler setup -t ${DOPPLER_PRD_TOKEN} --no-interactive; fi
+        - if [ "${AWS_BRANCH}" != "main" ]; then doppler setup -t ${DOPPLER_STG_TOKEN} --no-interactive; fi
+        - if [ "${AWS_BRANCH}" != "main" ]; then echo "NEXTAUTH_URL=\"https://pr-${AWS_PULL_REQUEST_ID}.[replace-with-app-ID].amplifyapp.com/\"" > .env; fi
+        - doppler run -- env | grep -e DATABASE_ -e GOOGLE_ -e NEXTAUTH_ -e BUILD_ >> .env
+        - yarn prisma generate
+        - yarn run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+```
+
+2. Add Doppler environment variables
+3. Add Environment Variables
+   1. If you are using Doppler on the application you will need to get tokens for Amplify to access the variables
+   2. 
+4. Turn on Previews
+
 ### RDS
 RDS is a beast. Esssentially, we have 2 branches: `dev` and `prod`, which correspond to temporary data and production data. As a developer, you should never have access to prod data. Please ask you executive if you believe you need access to this data before doing anything with it.
 
