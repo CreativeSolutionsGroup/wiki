@@ -75,6 +75,8 @@ The project board is where **all work originates** for *developers*
 
 Much of this board is a merging between the Scrum and Shape Up philosophy.
 
+Everything here should be laid out in a "As __ I want __ so I can __." This is so that at a glance, we have: the guest, the task, and why we're doing it.
+
 It has a few parts that I will explain here.
 
 ##### Unshaped work
@@ -119,6 +121,8 @@ The queue is work that is going to be inserted into the next sprint. It is dragg
 
 This is work that is in the current sprint and is being worked on.
 
+Everything in here should take *one week* and one week **only**. Otherwise, it must be broken down further.
+
 Whenever something is done here, it should go into [In Review](#in-review).
 
 If it fails, it should be [punted](#punt).
@@ -136,3 +140,38 @@ This is timeboxed to a *15 minute* meeting.
 Once this is finished, it may be dragged into *done*!
 
 Make sure that you make stories in [Unshaped Work](#unshaped-work) after this meeting that defines the changes that the customer wants.
+
+### GitHub
+
+Github has two purposes.
+
+1. Store the code
+2. Provide documentation for developers
+
+The code storage is provided through repositories. That is not important for this document.
+
+#### Documentation for Developers
+
+Documentation for developers is provided using the [Kanban Board](https://github.com/orgs/CreativeSolutionsGroup/projects/9). This is where the [Developer Backlog](https://scrumguides.org/scrum-guide.html#sprint-backlog) exists.
+
+This is a traditional kanban board that goes through all the steps of work for developers. It is *not* a story board. It is a *task* board. It is much lower level than stories. If there is a "director" position on CSG currently, they will likely only work with the [Project Board](#the-project-board) and not this board.
+
+##### Todo
+
+These are tasks that are in the sprint but have yet to be started.
+
+##### In Progress
+
+These are tasks that are currently being worked on by developers.
+
+##### Punt
+
+These are tasks that need to be sent to the next sprint. It is very similar to the [Punt](#punt) of the Project Board.
+
+##### In Review
+
+This is where the technical execs are able to review the work of the developers. Technically, everyone should be able to do reviews, but currently it is relegated to technical execs.
+
+##### Done
+
+These are *closed* issues that are complete.
