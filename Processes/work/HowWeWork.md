@@ -85,11 +85,13 @@ The process of shaping is what takes something from the unshaped column to the s
 
 ##### Shaped work
 
-Shaped work is work that is:
+[Shaped work](https://basecamp.com/shapeup/1.1-chapter-02) is work that is:
 
 1. Rough
 2. Solved
 3. Bounded
+
+Wireframes are too concrete. Words are too abstract.
 
 <ins>Rough</ins>
 
