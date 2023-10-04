@@ -81,6 +81,8 @@ It has a few parts that I will explain here.
 
 Unshaped work is work that is *rough* only. It has no solution, it is merely an idea that has no form.
 
+The process of shaping is what takes something from the unshaped column to the shaped column. This is *not* creating a new card, but editing the old one and adding more details as shown in the step below.
+
 ##### Shaped work
 
 Shaped work is work that is:
@@ -102,3 +104,33 @@ All work must be solved. This is applicable to *all* tasks. You must have a clea
 All work must be bounded. Developers *love* to make things. They love to come up with creative solutions. You must keep them within the bounds of the story so that they do not do something that they do not have to do. Developers experience burnout whenever the bounds are not clearly defined.
 
 Bounded means that you have thought through and documented everything that a developer *might* want to do extra and telling them not to do it.
+
+<ins>Summary</ins>
+
+This work may or may not be queued next sprint. The only requirement to be in this column is that it is *shaped* work.
+
+##### Queue
+
+The queue is work that is going to be inserted into the next sprint. It is dragged into [In Progress](#in-progress) whenever the next sprint starts.
+
+##### In Progress
+
+This is work that is in the current sprint and is being worked on.
+
+Whenever something is done here, it should go into [In Review](#in-review).
+
+If it fails, it should be [punted](#punt).
+
+##### Punt
+
+This is work that was not finished this sprint and must be sent back.
+
+##### In Review
+
+This is where you review the artifact produced by the story with the guest. You should schedule a meeting with the guest *directly* after the sprint meeting. Review must be done within the week so that you may redefine the work for the next iteration.
+
+This is timeboxed to a *15 minute* meeting.
+
+Once this is finished, it may be dragged into *done*!
+
+Make sure that you make stories in [Unshaped Work](#unshaped-work) after this meeting that defines the changes that the customer wants.
