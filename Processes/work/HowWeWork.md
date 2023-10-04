@@ -9,7 +9,7 @@ We adopt two philosophies: [Scrum](https://scrumguides.org/scrum-guide.html) and
 Our work loop is simple:
 
 1. Define the work with the guest (Week 1)
-2. Do the work (Week 2)
+2. Do the work (Week 2, known as [the sprint](https://scrumguides.org/scrum-guide.html#the-sprint))
 3. Review the work with the guest (Week 3)
 4. Return to step 1.
 
