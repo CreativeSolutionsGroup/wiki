@@ -55,6 +55,8 @@ Next, go to the "Domain management" tab under the app settings for the app you a
 
 This process will enable you to get Preview Deployments on an Amplify App. The preview deployment will automatically deploy a pull request on GitHub and put a link to the test deployment into the pull request.
 
+**NOTE:** All instructions will assume this is on Amplify
+
 1. Update Build Settings
    1. Go to `Build Settings` for your application
    2. Use the following commands under `build/commands`
@@ -101,11 +103,52 @@ frontend:
       - node_modules/**/*
 ```
 
-2. Add Doppler environment variables
-3. Add Environment Variables
-   1. If you are using Doppler on the application you will need to get tokens for Amplify to access the variables
-   2. 
+2. Add Doppler environment variables (if utilizing Doppler)
+   1. Go into the `Environment variables` tab on the AWS App
+   2. Create two new variables
+      1. `DOPPLER_STG_TOKEN`
+      2. `DOPPLER_PRD_TOKEN`
+   3. Navigate to this project in Doppler. Then select the `stg` config.
+   4. Select the tab labeled `ACCESS`, and under the `Service Tokens` section, click the `Generate` button.
+   5. Name the variable `AWS Amplify`, then click `Generate Service Token`. Don't worry about any of the extra settings.
+   6. Copy the generated token, and paste it as the value for `DOPPLER_STG_TOKEN` back on Amplify.
+   7. Repeat this for `dev` from step 3.
+   8. Now head back to Doppler and select any of the configs for the app.
+   9. To make Auth work we need to add a VAR called `BUILD_ENV`. The value for which is `dev` | `stg` | `prd` depending on which config you are in.
+   10. Make sure to add the right value to each of the 3 configs.
+3. Correct Build Settings for correct Environment variables (Doppler)
+    1. To make sure everything builds correctly, you need the correct environment variables.
+    2. Navigate to the `Build Settings` tab, and click `edit` on the `amplify.yml` file.
+    3. Go to the line that looks like: `- doppler run -- env | grep -e DATABASE_ -e GOOGLE_ -e NEXTAUTH_ -e BUILD_ >> .env`
+    4. This line likely needs customized for each app. Open Doppler to the correct project and open any of the configs.
+    5. Now edit the build setting to appropriately account for all of the variables. You just need up to the first `_` on each of them.
+       1. For an app that has:
+          1. AWS_ACCESS_KEY_ID
+          2. AWS_SECRET_ACCESS_KEY
+          3. GOOGLE_CLIENT_ID
+          4. GOOGLE_CLIENT_SECRET
+          5. NEXTAUTH_URL
+          6. NEXTAUTH_SECRET
+          7. BUILD_ENV
+          8. DATABASE_URL
+          9. TWILIO_API_KEY
+          10. TWILIO_NUMBER
+          11. TWILIO_SECRET
+          12. TWILIO_SID
+       2. The line should look like this:
+          1. `- doppler run -- env | grep -e AWS_ -e GOOGLE_ -e NEXTAUTH_ -e BUILD_ - DATABASE_ -e TWILIO_ >> .env`
 4. Turn on Previews
+   1. Now that it will build properly, we need to actually turn on previews.
+   2. Back in AWS, open the `preview` tab
+   3. Click the `Enable Previews` button
+   4. Click `Install GitHub App`. This will navigate you to GitHub.
+      1. We already have the GitHub App installed, and this doesn't break anything.
+   5. Select the `CreativeSolutionsGroup` option
+   6. Scroll down to `Repository Access` and ensure that the repo you are setting up is in the list of selected repositories.
+   7. Go back to AWS and there should be a new page that is titled `Previews`.
+   8. Click the little circle on the same row as the `main` branch. This should make the circle turn blue and the `Manage` button turn orange.
+   9. Click the `Manage` button and turn on the checkbox for `Pull Request Previews`.
+   10. Click `Confirm`, and you now have Preview Deployments
 
 ### RDS
 RDS is a beast. Esssentially, we have 2 branches: `dev` and `prod`, which correspond to temporary data and production data. As a developer, you should never have access to prod data. Please ask you executive if you believe you need access to this data before doing anything with it.
