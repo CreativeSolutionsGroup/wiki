@@ -45,8 +45,7 @@ Tenant 3: **Speak of the bad before the good**
 Now that we know what was good for the team, we can begin planning the next sprint. This is a fairly in-the-weeds process.
 
 1. Assign each story to 2 people
-2. Score the stories (Note: this MUST be anonymous and between the two assignees. You can accomplish this by making them hold their hands up with 1-5 for the difficulty of the stories)
-3. Make sure everyone knows why they are doing their work
+2. Make sure everyone knows why they are doing their work
 
 Tenant 4: **Nothing good happens without at least 2 people**
 
@@ -66,8 +65,16 @@ Basecamp contains a lot of the way that execs do work.
 
 The todo list contains two things:
 
-1. The operational board (things that are one-off tasks that do not produce an artifact)
-2. The booper board (booper setups!)
+1. The operational list (things that are one-off tasks that do not produce an artifact)
+2. The booper list (booper setups!)
+
+#### The Icebox
+
+This is where all the unshaped/shaped work goes that we are not ready to do yet. 
+
+Sometimes, your project won't be one of the lists in here. In that case, create a new list inside of here for your project.
+
+Otherwise, just add the todo in a *story format*.
 
 #### The Project Board
 
@@ -140,38 +147,3 @@ This is timeboxed to a *15 minute* meeting.
 Once this is finished, it may be dragged into *done*!
 
 Make sure that you make stories in [Unshaped Work](#unshaped-work) after this meeting that defines the changes that the customer wants.
-
-### GitHub
-
-Github has two purposes.
-
-1. Store the code
-2. Provide documentation for developers
-
-The code storage is provided through repositories. That is not important for this document.
-
-#### Documentation for Developers
-
-Documentation for developers is provided using the [Kanban Board](https://github.com/orgs/CreativeSolutionsGroup/projects/9). This is where the [Developer Backlog](https://scrumguides.org/scrum-guide.html#sprint-backlog) exists.
-
-This is a traditional kanban board that goes through all the steps of work for developers. It is *not* a story board. It is a *task* board. It is much lower level than stories. If there is a "director" position on CSG currently, they will likely only work with the [Project Board](#the-project-board) and not this board.
-
-##### Todo
-
-These are tasks that are in the sprint but have yet to be started.
-
-##### In Progress
-
-These are tasks that are currently being worked on by developers.
-
-##### Punt
-
-These are tasks that need to be sent to the next sprint. It is very similar to the [Punt](#punt) of the Project Board.
-
-##### In Review
-
-This is where the technical execs are able to review the work of the developers. Technically, everyone should be able to do reviews, but currently it is relegated to technical execs.
-
-##### Done
-
-These are *closed* issues that are complete.
