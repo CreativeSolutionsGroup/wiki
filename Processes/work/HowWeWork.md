@@ -4,6 +4,21 @@ This document is the full outline of how CSG does its work.
 
 We adopt two philosophies: [Scrum](https://scrumguides.org/scrum-guide.html) and [Shape Up](https://basecamp.com/shapeup). You will see both of them utilized here.
 
+Before you decide to switch these processes, realize that the choice for these philosophies was made with much care. 
+
+1. We chose Scrum because we needed faster iteration times than Shape Up with regular team retrospectives.
+2. We chose Shape Up because we needed to shape our work better.
+
+With a comination of both 1 and 2, we have seen the productivity of a *part-time* team increase immensely. While one or the other may be better for a full-time team, we have found a healthy medium here.
+
+## The Tenants
+
+Tenant 1: **We fail as fast as possible**
+Tenant 2: **Small teams eat large teams for breakfast**
+Tenant 3: **Speak of the bad before the good**
+Tenant 4: **Nothing good happens without at least 2 people**
+Tenant 5: **All work must have an external guest that will be benefitted.**
+
 ## The Work Loop
 
 Our work loop is simple:
@@ -45,8 +60,8 @@ Tenant 3: **Speak of the bad before the good**
 Now that we know what was good for the team, we can begin planning the next sprint. This is a fairly in-the-weeds process.
 
 1. Assign each story to 2 people
-2. Score the stories (Note: this MUST be anonymous and between the two assignees. You can accomplish this by making them hold their hands up with 1-5 for the difficulty of the stories)
-3. Make sure everyone knows why they are doing their work
+2. Make sure everyone knows why they are doing their work
+3. Realize that we do *not* score [stories](./WhyWeDontScore.md).
 
 Tenant 4: **Nothing good happens without at least 2 people**
 
@@ -132,6 +147,8 @@ If it fails, it should be [punted](#punt).
 This is work that was not finished this sprint and must be sent back.
 
 ##### In Review
+
+Tenant 5: **All work must have an external guest that will be benefitted.**
 
 This is where you review the artifact produced by the story with the guest. You should schedule a meeting with the guest *directly* after the sprint meeting. Review must be done within the week so that you may redefine the work for the next iteration.
 
