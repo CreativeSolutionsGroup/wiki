@@ -2,7 +2,7 @@
 
 [Home](Readme.md)
 
-isaac was here
+isaac was here - again
 
 This wiki is a compliation of **need-to-know** CSG-related information; it should be updated at the earliest convenience when new information arises. Each page contains a header which can be used to navigate to its previous page and [Home](Readme.md), as well as an introduction pertaining to the big idea of the present application. As the wiki is updated, a good rule to maintain is if the information would be better understood split up, split it up. A table of contents is available here, on the [Home](Readme.md) page, and can be searched using `ctrl+f`. If you have any questions please contact an executive. If you believe some essential information is missing, please add it and make a PR. High visibility and accessability is the goal.
 
