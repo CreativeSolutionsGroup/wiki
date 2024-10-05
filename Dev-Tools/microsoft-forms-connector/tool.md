@@ -3,9 +3,9 @@
 ## Overview
 
 This document serves as a tutorial to setup a connecter between Microsoft Forms and Basecamp using Power Automate. You can think of this as what webhooks used to be with Google forms now in the context of Microsoft forms.
-Creating a card in Basecamp is a two-step process involving the Power Automate script (instructions to follow) to create a to-do list item. Since Power Automate can only create these to-do list items, we also need a backend to parse the data from the to-do and create a card with the information.
+Creating a card in Basecamp is a two-step process involving the Power Automate script (instructions to follow) to create a to-do list item. Since Power Automate can only create these to-do list items, we also need a backend to parse the data from the to-do and create a card with the information, which is outside the scope of this particular wiki entry.
 
-## Creating Connecters
+## Creating Connectors
 
 ### Setting Up the Flow
 
@@ -19,7 +19,7 @@ Give the flow an appropriate name and select "When a new response is submitted" 
 
 <img src="./images/pa-trigger-select.png" alt="Selecting Trigger" width="600"/>  
 
-Navigate over to the Microsoft form that the flow is connecting to Basecamp and copy the "id" field in the URL.
+Navigate over to the Microsoft form that the flow is connecting to Basecamp and copy the `id=` field in the URL.
 
 <img src="./images/form-id-retreive.png" alt="Find ID Field" width="600"/>   
 
@@ -29,9 +29,11 @@ In the newly created flow, click on the "When a new response is submitted" item.
 
 Add an action using the '+' button underneath the currently selected object in the flow. In the side pane, search for "get response details" and choose the option under "Microsoft Forms".
 
-<img src="./images/pa-workspace-add-action1.png" alt="Add Form Action" width="400"/>   
+<img src="./images/pa-workspace-add-action1.png" alt="Add Form Action" width="400"/> 
+<br>  
+<img src="./images/pa-workspace-add-action-resp.png" alt="Add Form Action" width="600"/>
 
-Click the newly inserted item and in the pane, paste the Form Id in the blank as done previously. Select on the "Response Id" field and click the lightning bolt icon that appears on the right of the blank. In this menu, select "Response Id" option.
+Click the newly inserted item and in the pane, paste the Form Id in the blank as done previously. Select on the "Response Id" field and click the lightning bolt icon that appears on the right of the blank. In this menu, select the "Response Id" option.
 
 <img src="./images/pa-workspace-resp-detail1.png" alt="Set Form ID" width="400"/>
 <br>
@@ -83,7 +85,7 @@ Note again that all the form response items were selected through the "fx" menu 
 
 Below is templated code for the Description field. Be sure to replace the `<TARGET_PROJECT_ID>` field with the number after `bucket/` in the URL of the destination Basecamp, as well as the `<TARGET_COLUMN_ID>` with the `todolists/` number in the URL of the destination Basecamp. Replace `<TODO_ITEM_TITLE>` with the desired title on the final card item. Replace `<HTML_DESCRIPTION>` with an HTML representation of what is desired in the final card item's description field.
 
-```
+```json
 {  
 "title": "<TODO_ITEM_TITLE>",
 "project_id": "<TARGET_PROJECT_ID>",   
@@ -93,3 +95,9 @@ Below is templated code for the Description field. Be sure to replace the `<TARG
 "  
 }
 ```
+
+### Finishing Up
+To deploy your Power Automate script, all you have to do is save the script using the save button in the upper left hand corner. You should receive a notification telling you that it was saved, and prompting you to test it out.
+Congratulations, you created a Power Automate script!
+
+<img src="./images/pa-workspace-save.png" alt="Saving and Deploying" width="800"/>
