@@ -44,7 +44,7 @@ Head back to the code page and then copy and paste this code into the editor. Th
 
 ```js
 // The location to send the information
-const postUrl = "https://forms-basecamp-link.creativesolutions.workers.dev/";
+const postUrl = "https://webhooks.cusmartevents.com/forms";
 // List IDs for multiple destination forms
 const locations = {
   SELECTOR_TEXT_1: "1234567890",
@@ -53,7 +53,7 @@ const locations = {
 
 function onSubmit() {
   // Grabs the last form submission and all the answers from it
-  const formItems = CloudflareLibrary.getFormItems(FormApp.getActiveForm());
+  const formItems = BasecampLibrary.getResponseFields(FormApp.getActiveForm());
   // Log for debugging
   console.log(formItems);
   // Choose where to send the form data
@@ -106,7 +106,7 @@ function onSubmit() {
   };
 
   // Actually send the data now
-  CloudflareLibrary.sendDataToCloudflare(payload);
+  BasecampLibrary.sendDataToCloudflare(payload);
 }
 ```
 
