@@ -26,7 +26,7 @@ How to create a report using Tableau and iAttended
 
 ## The Process
 
-1. Start the script `doppler run -- python3 main.py`
+1. Start the script `doppler run -- python3 main.py` or `doppler run -- python main.py`
 
 2. Update events by selecting that option from the menu
 
